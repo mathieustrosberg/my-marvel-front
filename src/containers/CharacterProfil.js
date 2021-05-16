@@ -12,7 +12,7 @@ const CharacterProfil = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        `https://marvel-back-vlb.herokuapp.com/${characterId}`
+        `https://marvel-back-vlb.herokuapp.com/comics/${characterId}`
       );
       console.log(response);
       setData(response.data);
